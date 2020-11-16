@@ -19,9 +19,7 @@ class Tv1 extends Product1{
 		super(100); //조상의 생성자, 즉 Product(int price)를 호출하겠다는 의미
 	}
 	
-	public String tostring() {
-		return "TV 구입";
-		}
+	public String toString() {return "TV";}// Object 클래스의 tostring() 메소드를 오버로딩
 }
 	
 
@@ -30,9 +28,7 @@ class Computer extends Product1{
 		super(200); //조상의 생성자, 즉 Product(int price)를 호출하겠다는 의미
 	}
 	
-	public String tostring() {
-		return "COMPUTER 구입";
-	}
+	public String toString() {return "COMPUTER";}
 	
 	
 }
@@ -42,9 +38,7 @@ class Audio extends Product1{
 		super(50);
 	}
 	
-	public String tostring() {
-		return "Audio 구입";
-	}
+	public String toString() {return "Audio";}
 	
 }
 
@@ -66,7 +60,7 @@ class Buyer{
 		money -= p.price;
 		bonus_point += p.bonus_point;
 		cart[i++] = p;
-		System.out.println(p.toString() + "을 했음.");
+		System.out.println(p.toString() + "을/를 구입 했음.");
 	}
 	
 	void show_cart() {
@@ -79,8 +73,8 @@ class Buyer{
 			item_list+=cart[i] + ", ";
 			
 		}
-		System.out.println(" 구입한 제품의 총합은 " + sum + "만원입니다.");
-		System.out.println("구입한 제품은 " + cart);
+		System.out.println("구입한 제품의 총합은 " + sum + "만원입니다.");
+		System.out.println("품목 : " + item_list);
 	}
 }
 
@@ -109,13 +103,13 @@ public class Exam015_class_ploymophism01 {
 //		b.buy(new Computer());
 //		b.buy(new Audio());
 		
-		System.out.println("현재 지갑에 남은 돈은 " + b.money + "원임");
-		System.out.println("보너스 포인트는 "+ b.bonus_point + "임");
+		System.out.println("현재 지갑에 남은 돈은 " + b.money + "만원임");
+		System.out.println("보너스 포인트는 "+ b.bonus_point + "point임");
 	}
 
 }
 
-// 왜 이렇게 나올까.....
+// 왜 이렇게 나올까..... >>> object 클래스의 toSting() 메소드를 오버로딩해야 하려는 의도인데 tostring()으로 잘못 표기
 
 //jhl.Tv1@73a28541을 했음.
 //jhl.Computer@69222c14을 했음.

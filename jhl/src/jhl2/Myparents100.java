@@ -1,4 +1,4 @@
-package jhl1;
+package jhl2;
 
 public class Myparents100 {
 	private   int prv; // $같은 클래스에서만 접근$, 가장 좁은 법위를 갖는다. 메소드로 접근해야 함.
