@@ -1,4 +1,4 @@
-이거 잘 모르겠음.
+잘 모르겠음.
 package jhl;
 
 import java.util.LinkedList;
