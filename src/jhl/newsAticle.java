@@ -1,10 +1,11 @@
 package jhl;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.LinkedList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -23,7 +24,7 @@ public class newsAticle {
 		System.out.println(Arrays.toString(lst));
 		System.out.println();
 
-		HashMap<String, Integer> dic = new HashMap<String, Integer>(); //딕셔너리로 객체 생성
+		Map<String, Integer> dic = new HashMap<String, Integer>(); //딕셔너리로 객체 생성
 		//		dic.put("a", 2);
 		//		dic.put("a", 1);
 
@@ -47,17 +48,17 @@ public class newsAticle {
 
 		}
 
-		System.out.println(dic);
 
 		// 내림차순 정렬, value가 같으면 key 오름 차순으로 정렬
 		// 리스트로 전환. map에는 sort가 없음
 
-		List<Map.Entry<String, Integer>> list = new LinkedList<>(Map.entrySet());
+		//		List<Map.Entry<String, Integer>> list = new LinkedList<>(Map.entrySet());
+		int[] list = {1,2,3,4,5,6};
+		boolean result = Arrays.stream(list).anyMatch(a -> a%2==0);
+		System.out.println(result);
+		
+		애니매치
 		
 	}
+
 }
-
-
-//class DescComp implements Comparator<Map.Entry<String, Integer>>{
-//	
-//}
