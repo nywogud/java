@@ -1,9 +1,12 @@
 package jhl;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 
 public class newsAticle {
 	public static void main(String[] args) {
@@ -44,12 +47,17 @@ public class newsAticle {
 
 		}
 
-
-
-
 		System.out.println(dic);
-		//		Collections;
-		// 빈도수로 내림차순 정렬하고 0~9 인덱스를 출력하면 됨.
 
+		// 내림차순 정렬, value가 같으면 key 오름 차순으로 정렬
+		// 리스트로 전환. map에는 sort가 없음
+
+		List<Map.Entry<String, Integer>> list = new LinkedList<>(Map.entrySet());
+		
 	}
 }
+
+
+//class DescComp implements Comparator<Map.Entry<String, Integer>>{
+//	
+//}
