@@ -25,7 +25,7 @@ class ThreadEx83_1 extends Thread{
 
 		while(i !=0 && !isInterrupted()) {
 			System.out.println(i--);
-			for(long x=0; x<100000000L; x++);
+			for(long x=0; x<1000000000L; x++);
 		}
 		System.out.println("카운트다운 종료");
 	}
