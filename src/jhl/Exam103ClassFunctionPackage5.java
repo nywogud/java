@@ -36,7 +36,6 @@ public class Exam103ClassFunctionPackage5 {
 		double avg = list.stream().mapToInt(Student12::getScore)
 					.average().getAsDouble();
 		System.out.printf("학생들의 평균은 : %3.2f", avg);
-		
-		
+	
 	}
 }
