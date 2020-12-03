@@ -8,4 +8,4 @@ public class ExamOptinal {
 		String str = "There are ArE four four in swasson in a year.";
 		Stream<String> strStream = Stream.of(str);
 	}
-}	
+}
