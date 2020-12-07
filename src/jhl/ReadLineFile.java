@@ -14,7 +14,7 @@ public class ReadLineFile {
 	public static void main (String[] args) throws IOException  {
 		HashMap<String, String> hm = new HashMap<String, String>();
 		String strLine = null;
-		File file = new File("C:\\lecture\\tuto\\java\\voca.txt");
+		File file = new File("D:\\lecture\\java\\voca.txt");
 		if (file.exists()) {
 			BufferedReader inFile = new BufferedReader(new FileReader(file));
 
@@ -127,17 +127,17 @@ public class ReadLineFile {
 		sc.close();
 
 		if (cnt==5) {
-			System.out.println("만점");
+			System.out.printf("%d점", cnt *20);
 		} else if(cnt==4) {
-			System.out.println("80점.");
+			System.out.printf("%d점", cnt *20);
 		} else if(cnt==3) {
-			System.out.println("60점.");
+			System.out.printf("%d점", cnt *20);
 		} else if(cnt==2) {
-			System.out.println("40점.");
+			System.out.printf("%d점", cnt *20);
 		} else if(cnt==1) {
-			System.out.println("20점.");
+			System.out.printf("%d점", cnt *20);
 		} else if(cnt==0) {
-			System.out.println("0점.");
+			System.out.printf("%d점", cnt *20);
 		}
 	}
 }
